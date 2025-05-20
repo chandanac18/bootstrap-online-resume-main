@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+/*---------------------------------COLOURS*/
+.bg-color-name-title {
+    background-color: #171717;
+}
+
+.bg-colors-three-reasons {
+    background-color: #5e5e5e;
+}
+
+.ui-menu-color-home {
+    background-color: #000000;
+}
+
+.ui-menu-color-resume {
+    background-color: #0f0f0f;
+}
+
+.ui-menu-color-contact {
+    background-color: #1c1c1c;
+}
+
+.ui-menu-color-github {
+    background-color: #2f2f2f;
+}
+
+.ui-menu-color-download {
+    background-color: #373737;
+}
+
+/*Hover effects for buttons*/
+
+.ui-menu-color-home, .ui-menu-color-resume, .ui-menu-color-contact, .ui-menu-color-github, .ui-menu-color-interests, .ui-menu-color-download {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.ui-menu-color-home:hover, .ui-menu-color-resume:hover, .ui-menu-color-contact:hover, .ui-menu-color-github:hover, .ui-menu-color-interests:hover, .ui-menu-color-download:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.ui-menu-color-home:focus, .ui-menu-color-resume:focus, .ui-menu-color-contact:focus, .ui-menu-color-github:focus, .ui-menu-color-interests:focus, .ui-menu-color-download:focus {
+    outline: none;
+}
+
+.ui-menu-color-home:hover {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+.ui-menu-color-resume:hover {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+.ui-menu-color-contact:hover {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+.ui-menu-color-download:hover {
+    background-image: linear-gradient(to right, #1e1e1e, #171717, #121212, #0d0d0d, #080808);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+.ui-menu-color-github:hover {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+.ui-menu-color-interests:hover {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 25px 0 rgba(116, 79, 168, 0.75);
+}
+
+/*---------------------------------SPECIAL PADDING, MARGIN AND TEXTS*/
+
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0px 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/*---------------------------------HEADING*/
+header {
+    margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+.logo-container-big {
+    background-color: #171717;
+    min-height: 360px;
+    width: 100%;
+}
+
+.logo {
+    background-image: url(../images/profile-picture.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0px;
+}
+
+/* CSS hack to get rid of white spacing*/
+.menucontainer {
+    font-size: 0;
+    margin-bottom: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    font-size: 16px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 140px;
+    text-align: center;
+    padding: 0%;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    height: 120px;
+}
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 30px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/*---------------------------------FOOTER*/
+
+footer {
+    background-color: #171717;
+    padding: 50px 0;
+    color: #ffffff;
+    margin: 0;
+    min-height: 120px;
+}
+
+.cv-pdf i, .fa-instagram, .fa-linkedin, .fa-github {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    background-size: 300% 100%;
+}
+
+.cv-pdf i:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+    background-position: 100% 0;
+    background-image: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
+    -webkit-background-clip: text; /* for WebKit/Blink browsers like Chrome and Safari */
+    background-clip: text; /* for compatibility with other browsers */
+    color: transparent; /* Make text transparent to reveal the gradient background */
+}
+
+.social-links li a i {
+    padding: 12px;
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+.fa-cloud-arrow-down {
+    padding-bottom: 30px;
+}
+
+/*---------------------------------MAIN - THREE REASONS*/
+
+.three-reasons-icon {
+    font-size: 30px;
+    color: #000000;
+
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+.bg-colors-three-reasons {
+    background-image: linear-gradient(to right, #ffd6ff, #e7c6ff, #c8b6ff, #b8c0ff, #bbd0ff);
+}
+
+.badge-color {
+    background-image: linear-gradient(to right, #555981, #14151f);
+    color: #ffffff;
+    padding: 10px 14px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+
+}
+
+.badge-color2 {
+    background-image: linear-gradient(to right, #0b1a45, #3b4e82);
+    color: #ffffff;
+    padding: 10px 14px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+
+}
+
+/*---------------------------------MAIN - PERSONAL INFO*/
+
+.bg-color-personal-info {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.personal-info-item {
+    margin-top: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    display: inline-block;
+    padding-right: 9px;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 600;
+}
+
+.personal-info-item .value {
+    width: 60%;
+    position: relative;
+}
+
+.timeline-item {
+    padding-left: 50px;
+    position: relative;
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+    padding-bottom: 20px;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 0.7em;
+    top: 2.7em;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #ffffff;
+}
+
+/*---------------------------------MAIN - CONTACT FORM*/
+
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
+.contact-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.form-control {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+button[type="submit"]:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#google-maps {
+    width: 100%;
+    height: 300px;
+    border-radius: 17px;
+    margin-top: 25px;
+}
